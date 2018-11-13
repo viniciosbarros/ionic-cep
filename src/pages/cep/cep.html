@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CEP</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>Busca de CEP</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-item>
+              <ion-label color="primary" floating>CEP</ion-label>
+              <ion-input  [(ngModel)]="cep.cep" (change)="getCep($event)"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>Logradouro</ion-label>
+              <ion-input [(ngModel)]="cep.logradouro"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>Complemento</ion-label>
+              <ion-input [(ngModel)]="cep.complemento"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>Bairro</ion-label>
+              <ion-input [(ngModel)]="cep.bairro"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>Localidade</ion-label>
+              <ion-input [(ngModel)]="cep.localidade"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>UF</ion-label>
+              <ion-input [(ngModel)]="cep.uf"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>Unidade</ion-label>
+              <ion-input [(ngModel)]="cep.unidade"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>IBGE</ion-label>
+              <ion-input [(ngModel)]="cep.ibge"></ion-input>
+          </ion-item>
+
+          <ion-item>
+              <ion-label color="primary" floating>gia</ion-label>
+              <ion-input [(ngModel)]="cep.gia"></ion-input>
+          </ion-item>
+
+          <button ion-button (click)="getCep($event)">Default</button>
+
+      </ion-card-content>
+  </ion-card>
+
+</ion-content>
